@@ -8,8 +8,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "uswds": "^2.8.1"
+    "react-scripts": "4.0.0",
+    "uswds": "^2.8.1",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +19,9 @@
     "test": "react-scripts test",
     "test:ci": "cross-env JEST_JUNIT_OUTPUT_DIR=reports JEST_JUNIT_OUTPUT_NAME=unit.xml CI=true yarn test --coverage --reporters=default --reporters=jest-junit",
     "lint": "eslint src",
-    "lint:ci": "eslint -f eslint-formatter-multiple src"
+    "lint:ci": "eslint -f eslint-formatter-multiple src",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "root": true,
@@ -91,5 +94,6 @@
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
     "jest-junit": "^11.1.0"
-  }
+  },
+  "snyk": true
 }
