@@ -4,11 +4,11 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
-    "http-proxy-middleware": "^1.0.5",
+    "http-proxy-middleware": "^2.0.7",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.0",
     "uswds": "^2.8.1"
   },
   "scripts": {
